@@ -1,13 +1,176 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Button Example</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <button id="myButton">Click Me!</button>
-  <div id="messageContainer"></div>
 
-  <script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Join the GIF Gala, a night of memes, creativity, and unforgettable moments!">
+
+    <title>GIF Gala | You're Invited!</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+
+        <div class="hero-content">
+            <span class="event-tag">✨ THE INTERNET'S BIGGEST PARTY</span>
+
+            <h1>
+                You're Invited to the
+                <span>GIF Gala!</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Where Memes Come to Life.
+            </p>
+
+            <div class="event-date">
+                <span>📅</span>
+                <p>July 21, 2023</p>
+            </div>
+
+            <a href="#rsvp" class="hero-button">
+                Reserve Your Spot →
+            </a>
+        </div>
+
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section class="about-section">
+
+            <div class="section-label">THE EXPERIENCE</div>
+
+            <h2>More Than Just a Party</h2>
+
+            <p>
+                The GIF Gala is a vibrant and festive event where guests
+                dress up as their favorite GIFs or memes. Get ready for
+                a night full of laughter, creativity, and unforgettable
+                moments as we bring internet culture to life!
+            </p>
+
+            <div class="event-highlights">
+
+                <article class="highlight-card">
+                    <span class="highlight-icon">🎭</span>
+                    <h3>Creative Costumes</h3>
+                    <p>Dress up as your favorite internet meme or GIF.</p>
+                </article>
+
+                <article class="highlight-card">
+                    <span class="highlight-icon">😂</span>
+                    <h3>Nonstop Fun</h3>
+                    <p>Enjoy a night filled with laughter and entertainment.</p>
+                </article>
+
+                <article class="highlight-card">
+                    <span class="highlight-icon">🌟</span>
+                    <h3>Unforgettable Moments</h3>
+                    <p>Make memories and celebrate internet culture.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- RSVP Section -->
+        <section class="rsvp-section" id="rsvp">
+
+            <div class="rsvp-container">
+
+                <div class="section-label">SAVE YOUR SPOT</div>
+
+                <h2>Will You Be There?</h2>
+
+                <p class="rsvp-description">
+                    Let us know if you can join the celebration!
+                </p>
+
+                <!-- Confirmation Message -->
+                <div
+                    id="confirmation-message"
+                    class="confirmation-message"
+                    role="status"
+                    aria-live="polite">
+                </div>
+
+                <!-- RSVP Form -->
+                <form id="rsvp-form">
+
+                    <div class="form-group">
+                        <label for="email">Your Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            autocomplete="email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="attendance">Are you attending?</label>
+
+                        <select
+                            id="attendance"
+                            name="attendance"
+                            required>
+
+                            <option value="" disabled selected>
+                                Select your answer
+                            </option>
+
+                            <option value="yes">
+                                Yes! I'll be there! 🎉
+                            </option>
+
+                            <option value="no">
+                                Sorry, I can't make it.
+                            </option>
+
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Submit My RSVP →
+                    </button>
+
+                </form>
+
+                <p class="rsvp-footer">
+                    We can't wait to celebrate with you! 💜
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>GIF Gala © 2023 | Made for the love of memes.</p>
+    </footer>
+
 </body>
 </html>
